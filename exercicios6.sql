@@ -22,7 +22,7 @@ SELECT fornecedor.nomeFantasia, pedido.codPedido, pedido.dataRealizacao, pedido.
 
 6)Apresentar todos os produtos, e quando existirem, as vendas relativas ao produto. Campos: código do produto, descrição do produto, código da venda.  USAR LEFT JOIN
 
-SELECT produto.codProduto, produto.descricao, itemVenda.codVenda FROM produto LEFT JOIN itemVenda ON produto.codProduto = itemVenda.codVenda;
+SELECT produto.codProduto, produto.descricao, itemVenda.codVenda FROM produto LEFT JOIN itemVenda ON produto.codProduto = itemVenda.codProduto; 
 
 7)Apresentar todos os fornecedores cadastrados, e quando existirem, os seus pedidos. Campos: nome fantasia do fornecedor, código do pedido, data de entrega do pedido. USAR LEFT JOIN 
 
